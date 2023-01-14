@@ -2,10 +2,9 @@ import { component$, Slot } from "@builder.io/qwik";
 export interface CardProps {
   image: string;
   title: string;
-  description: string;
 }
 
-export const Card = component$(({ image, title, description }: CardProps) => {
+export const Card = component$(({ image, title }: CardProps) => {
   return (
     <div class="card card-bordered">
       <figure>

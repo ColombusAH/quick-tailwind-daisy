@@ -7,43 +7,31 @@ export default component$(() => {
   return (
     <div class="flex flex-wrap content-center justify-evenly w-full">
       <div class="max-w-md mt-2">
-        <Card
-          image="/images/characters.jpeg"
-          title="Characters"
-          description="See all the characters in the Rick and Morty universe."
-        >
+        <Card image="/images/characters.jpeg" title="Characters">
           <p q:slot="content" class="h-10">
             See all the characters in the Rick and Morty universe.
           </p>
-          <Link q:slot="actions" href="/flower/">
+          <Link q:slot="actions" href="/characters/">
             Blow my mind 🤯
           </Link>
         </Card>
       </div>
       <div class="max-w-md mt-2">
-        <Card
-          image="/images/episodes.jpeg"
-          title="Episodes"
-          description="Explore all the episodes in the Rick and Morty series."
-        >
+        <Card image="/images/episodes.jpeg" title="Episodes">
           <p q:slot="content" class="h-10">
             See all the episodes in the Rick and Morty universe.
           </p>
-          <Link q:slot="actions" href="/flower/">
+          <Link q:slot="actions" href="/episodes/">
             Blow my mind 🤯
           </Link>
         </Card>
       </div>
       <div class="max-w-md mt-2">
-        <Card
-          image="/images/locations.jpeg"
-          title="Locations"
-          description="See all the locations in the Rick and Morty universe."
-        >
+        <Card image="/images/locations.jpeg" title="Locations">
           <p q:slot="content" class="h-10">
             See all the locations in the Rick and Morty universe.
           </p>
-          <Link q:slot="actions" href="/flower/">
+          <Link q:slot="actions" href="/locations/">
             Blow my mind 🤯
           </Link>
         </Card>
