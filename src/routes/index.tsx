@@ -9,12 +9,13 @@ export default component$(() => {
       <div class="max-w-md mt-2">
         <Card
           image="/images/characters.jpeg"
-          title="Top image"
-          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-          sapiente."
+          title="Characters"
+          description="See all the characters in the Rick and Morty universe."
         >
-          <Link href="/flower/">
+          <p q:slot="content" class="h-10">
+            See all the characters in the Rick and Morty universe.
+          </p>
+          <Link q:slot="actions" href="/flower/">
             Blow my mind 🤯
           </Link>
         </Card>
@@ -22,12 +23,13 @@ export default component$(() => {
       <div class="max-w-md mt-2">
         <Card
           image="/images/episodes.jpeg"
-          title="Top image"
-          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-          sapiente."
+          title="Episodes"
+          description="Explore all the episodes in the Rick and Morty series."
         >
-          <Link class="mindblow" href="/flower/">
+          <p q:slot="content" class="h-10">
+            See all the episodes in the Rick and Morty universe.
+          </p>
+          <Link q:slot="actions" href="/flower/">
             Blow my mind 🤯
           </Link>
         </Card>
@@ -35,12 +37,13 @@ export default component$(() => {
       <div class="max-w-md mt-2">
         <Card
           image="/images/locations.jpeg"
-          title="Top image"
-          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
-          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
-          sapiente."
+          title="Locations"
+          description="See all the locations in the Rick and Morty universe."
         >
-          <Link class="mindblow" href="/flower/">
+          <p q:slot="content" class="h-10">
+            See all the locations in the Rick and Morty universe.
+          </p>
+          <Link q:slot="actions" href="/flower/">
             Blow my mind 🤯
           </Link>
         </Card>
