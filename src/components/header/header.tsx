@@ -16,13 +16,13 @@ export default component$(() => {
           <h1 class="text-2xl ">R&M</h1>
         </Link>
 
-        <div class="dropdown dropdown-bottom dropdown-end">
-          <label tabIndex={0} class="btn m-1">
-            Click
-          </label>
+        <div class="dropdown dropdown-left">
+          <div tabIndex={0} class="m-1 btn">
+            Themes
+          </div>
           <ul
             tabIndex={0}
-            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            class="p-2 shadow menu dropdown-content flex-nowrap bg-base-100 rounded-box w-52 overflow-y-auto max-h-40 scrollbar scrollbar-thumb-emerald-300 scrollbar-track-gray-100"
           >
             {themeState.themes.map((theme) => (
               <li>

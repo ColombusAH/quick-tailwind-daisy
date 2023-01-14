@@ -62,6 +62,7 @@ export default component$(() => {
 
   useClientEffect$(({ track }) => {
     track(themeState);
+    document.documentElement.className+='h-screen max-h-screen'
     document.documentElement.setAttribute("data-theme", themeState.theme);
   });
 
@@ -73,7 +74,7 @@ export default component$(() => {
         <RouterHead />
       </head>
 
-      <body lang="en">
+      <body lang="en" class="p-0 h-screen">
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
