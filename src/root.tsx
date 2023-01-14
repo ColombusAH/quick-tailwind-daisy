@@ -60,9 +60,13 @@ export default component$(() => {
 
   useContextProvider(themeContext, themeState);
 
+  useClientEffect$(() => {
+    document.documentElement.className += "h-screen max-h-screen";
+  });
+
   useClientEffect$(({ track }) => {
     track(themeState);
-    document.documentElement.className+='h-screen max-h-screen'
+    document.documentElement.className += "h-screen max-h-screen";
     document.documentElement.setAttribute("data-theme", themeState.theme);
   });
 
