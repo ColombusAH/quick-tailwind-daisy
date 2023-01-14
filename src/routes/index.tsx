@@ -12,7 +12,7 @@ export default component$(() => {
             See all the characters in the Rick and Morty universe.
           </p>
           <Link q:slot="actions" href="/characters/">
-            Blow my mind 🤯
+            <span class="link link-secondary">got to characters 🤯</span>
           </Link>
         </Card>
       </div>
@@ -22,7 +22,7 @@ export default component$(() => {
             See all the episodes in the Rick and Morty universe.
           </p>
           <Link q:slot="actions" href="/episodes/">
-            Blow my mind 🤯
+            <span class="link link-secondary">got to episodes 🤯</span>
           </Link>
         </Card>
       </div>
@@ -32,7 +32,7 @@ export default component$(() => {
             See all the locations in the Rick and Morty universe.
           </p>
           <Link q:slot="actions" href="/locations/">
-            Blow my mind 🤯
+            <span class="link link-secondary">got to locations 🤯</span>
           </Link>
         </Card>
       </div>
