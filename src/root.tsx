@@ -59,14 +59,11 @@ export default component$(() => {
   });
 
   useContextProvider(themeContext, themeState);
-  
-  useClientEffect$(({track}) => {
+
+  useClientEffect$(({ track }) => {
     track(themeState);
-   const html = document.documentElement.setAttribute("data-theme", themeState.theme);
-
-   console.log(html)
+    document.documentElement.setAttribute("data-theme", themeState.theme);
   });
-
 
   return (
     <QwikCityProvider>

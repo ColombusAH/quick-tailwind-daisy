@@ -26,11 +26,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Rick and Morty",
   meta: [
     {
-      name: "description",
-      content: "Qwik site description",
+      name: "Rick snd morty app",
+      content:
+        "Rick and Morty browse app to see characters ,locations and  episodes",
     },
   ],
 };

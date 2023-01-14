@@ -1,3 +1,5 @@
-import { createContext, useContextProvider, useStore } from "@builder.io/qwik";
+import { createContext } from "@builder.io/qwik";
 
-export const themeContext = createContext<{ theme: string }>("theme");
+export const themeContext = createContext<{ theme: string; themes: string[] }>(
+  "theme"
+);
