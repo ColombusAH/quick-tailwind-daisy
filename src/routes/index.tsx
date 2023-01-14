@@ -1,26 +1,50 @@
-import { component$, useContext } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link } from "@builder.io/qwik-city";
-import { themeContext } from "~/providers/theme";
+import { Card } from "~/components/card/card";
 
 export default component$(() => {
-  const themeCtx = useContext(themeContext);
-  console.log(themeCtx);
   return (
-    <div>
-      <button
-        data-theme={themeCtx.theme}
-        class="btn"
-        onClick$={() => {
-          themeCtx.theme = "cyberpunk";
-        }}
-      >
-        Button
-      </button>
-
-      <Link class="mindblow" href="/flower/">
-        Blow my mind 🤯
-      </Link>
+    <div class="flex flex-wrap content-center justify-evenly w-full">
+      <div class="max-w-md mt-2">
+        <Card
+          image="/images/characters.jpeg"
+          title="Top image"
+          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
+          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
+          sapiente."
+        >
+          <Link href="/flower/">
+            Blow my mind 🤯
+          </Link>
+        </Card>
+      </div>
+      <div class="max-w-md mt-2">
+        <Card
+          image="/images/episodes.jpeg"
+          title="Top image"
+          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
+          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
+          sapiente."
+        >
+          <Link class="mindblow" href="/flower/">
+            Blow my mind 🤯
+          </Link>
+        </Card>
+      </div>
+      <div class="max-w-md mt-2">
+        <Card
+          image="/images/locations.jpeg"
+          title="Top image"
+          description=" Rerum reiciendis beatae tenetur excepturi aut pariatur est eos. Sit
+          sit necessitatibus veritatis sed molestiae voluptates incidunt iure
+          sapiente."
+        >
+          <Link class="mindblow" href="/flower/">
+            Blow my mind 🤯
+          </Link>
+        </Card>
+      </div>
     </div>
   );
 });

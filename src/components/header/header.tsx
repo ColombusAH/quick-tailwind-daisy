@@ -9,8 +9,8 @@ export default component$(() => {
   const themeState = useContext(themeContext);
 
   return (
-    <header class="bg-white border-b border-gray-300 shadow">
-      <nav class="max-w-7xl px-4 mx-auto h-16 w-full flex items-center justify-between">
+    <header class="bg-white border-b border-gray-300 shadow w-full">
+      <nav class=" px-4 h-16 w-full flex items-center justify-between">
         <Link href="/" class="flex items-center space-x-3">
           <QwikLogo />
           <h1 class="text-2xl ">R&M</h1>
