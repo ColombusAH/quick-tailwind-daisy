@@ -1,7 +1,7 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { Link } from '@builder.io/qwik-city';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.css?inline';
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
+import { QwikLogo } from "../icons/qwik";
+import styles from "./header.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -14,13 +14,22 @@ export default component$(() => {
           <h1 class="text-2xl ">R&M</h1>
         </Link>
 
-        <ul>
-          <li>
-            <a href="https://rickandmortyapi.com/" target="_blank">
-              Rick and Morty API
-            </a>
-          </li>
-        </ul>
+        <div class="dropdown dropdown-bottom dropdown-end">
+          <label tabIndex={0} className="btn m-1">
+            Click
+          </label>
+          <ul
+            tabIndex={0}
+            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Item 2</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
